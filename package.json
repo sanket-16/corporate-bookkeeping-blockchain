@@ -1,21 +1,11 @@
 {
-  "name": "expense",
-  "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "hardhat-project",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
-  },
-  "dependencies": {
-    "expo": "~50.0.7",
-    "expo-status-bar": "~1.11.1",
-    "react": "18.2.0",
-    "react-native": "0.73.4"
+    "deploy": "npx hardhat ignition deploy ./ignition/modules/ExpenseTracker.js --network localhost",
+    "localchain": "npx hardhat node"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
-  },
-  "private": true
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.2"
+  }
 }
